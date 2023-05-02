@@ -1,0 +1,51 @@
+calculadora = int(input("Digite su primer número:"))
+calculadora_2 = int(input("Digite su segundo número:"))
+print("Seleccione la operación que va a realizar:")
+print("1-Suma")
+print("2-Resta")
+print("3-multiplicación")
+print("4-División")
+
+number = 0
+
+opción = int(input("Elija su opción:"))
+
+if opción == 1:
+  print("El resultado es", calculadora + calculadora_2)
+elif opción == 2:
+  print("El resultado es", calculadora - calculadora_2)
+elif opción == 3:
+  print("El resultado es", calculadora * calculadora_2)
+elif opción == 4:
+  print("El resultado es", calculadora / calculadora_2)
+print("Desea volver a usar la calculadora?")
+print("1-Si")
+print("2-No")
+
+calculadora_3 = int(input("Elija su opción:"))
+while calculadora_3 == 1:
+  calculadora = int(input("Digite su primer número:"))
+  calculadora_2 = int(input("Digite su segundo número:"))
+  print("Seleccione la operación que va a realizar:")
+  print("1-Suma")
+  print("2-Resta")
+  print("3-multiplicación")
+  print("4-División")
+  opción = int(input("Elija su opción:"))
+
+  if opción == 1:
+    print("El resultado es", calculadora + calculadora_2)
+  elif opción == 2:
+    print("El resultado es", calculadora - calculadora_2)
+  elif opción == 3:
+    print("El resultado es", calculadora * calculadora_2)
+  elif opción == 4:
+    print("El resultado es", calculadora / calculadora_2)
+
+  print("Desea volver a usar la calculadora?")
+  print("1-Si")
+  print("2-No")
+  calculadora_3 = int(input("Elija su opción:"))
+
+if calculadora_3 == 2:
+  print("Gracias por usar la calculadora. Vuelva pronto :)")
